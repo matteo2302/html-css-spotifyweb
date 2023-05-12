@@ -37,6 +37,9 @@ aside {
   aside {
     width: 250px;
   }
+  .logo-small {
+    display: none;
+  }
 }
 /*********************************header*****************************************/
 header {
