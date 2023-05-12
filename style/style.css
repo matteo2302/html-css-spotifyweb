@@ -7,19 +7,35 @@
 .flex {
   display: flex;
 }
+.col {
+  flex-direction: column;
+}
 img {
   width: 100%;
 }
 /*********************************aside******************************************/
 aside {
-  width: 63px;
+  width: 60px;
   height: calc(100vh - 100px);
   background-color: black;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.logo-small {
+  margin-bottom: 15px;
+}
+.aside-nav {
+  height: 100%;
+  padding: 10px 16px;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 /*******************************aside media**************************************/
 @media all and (min-width: 639px) {
   aside {
-    width: 350px;
+    width: 250px;
   }
 }
 /*********************************header*****************************************/
@@ -37,8 +53,9 @@ main {
   margin-top: 100px;
   background-color: rgb(20, 25, 34);
   height: calc(100vh - 200px);
-  overflow: scroll;
+  overflow: auto;
 }
+
 /*********************************footer*****************************************/
 footer {
   width: 100%;
