@@ -33,12 +33,15 @@ aside {
   margin-top: 5px;
 }
 .aside-nav {
-  height: calc(100% - 30px);
+  /*height: calc(100% - 30px);*/
   padding: 10px 16px;
   margin: 0px auto;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+.aside-nav img {
+  width: 30px;
 }
 /*******************************aside media**************************************/
 @media all and (min-width: 639px) {
@@ -48,10 +51,7 @@ aside {
   .logo-small {
     display: none;
   }
-  .aside-nav-top {
-    height: 500px;
-    width: 40%;
-  }
+
   .logo {
     display: block;
   }
