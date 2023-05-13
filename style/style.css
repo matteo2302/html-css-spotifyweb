@@ -24,8 +24,15 @@ aside {
   flex-shrink: 0;
   flex-grow: 0;
 }
+p {
+  color: white;
+}
 .logo {
   display: none;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: -5px;
+  width: 200px;
 }
 .logo-small {
   width: 30px;
@@ -33,7 +40,7 @@ aside {
   margin-top: 5px;
 }
 .aside-nav {
-  /*height: calc(100% - 30px);*/
+  height: calc(100% - 30px);
   padding: 10px 16px;
   margin: 0px auto;
   justify-content: space-between;
@@ -42,6 +49,9 @@ aside {
 }
 .aside-nav img {
   width: 30px;
+}
+aside p {
+  display: none;
 }
 /*******************************aside media**************************************/
 @media all and (min-width: 639px) {
@@ -57,6 +67,20 @@ aside {
   }
   .img-aside {
     display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+  aside p {
+    display: block;
+  }
+  .aside-nav {
+    height: calc(100% - 55px);
+    padding-top: 20px;
+  }
+  .aside-nav-bottom,
+  .aside-nav-top {
+    width: 100%;
   }
 }
 /*********************************header*****************************************/
