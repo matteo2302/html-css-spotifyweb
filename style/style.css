@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 /*********************************utilities**************************************/
 .flex {
@@ -16,6 +17,14 @@ img {
 .opacity-05 {
   opacity: 0.5;
 }
+h4 {
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+  padding: 8px 0;
+  opacity: 0.5;
+}
 /*********************************aside******************************************/
 aside {
   width: 60px;
@@ -24,6 +33,8 @@ aside {
   flex-shrink: 0;
   flex-grow: 0;
 }
+li,
+h4,
 p {
   color: white;
 }
@@ -53,6 +64,31 @@ p {
 aside p {
   display: none;
 }
+.fa-plus {
+  color: black;
+  padding: 5px;
+  font-size: 24px;
+  background-color: rgb(163, 163, 163);
+}
+.playlist {
+  display: none;
+}
+.download {
+  height: 15px;
+}
+.download-box {
+  border-bottom: 1px solid rgba(163, 163, 163, 0);
+  padding-bottom: 10px;
+}
+.profile {
+  border-radius: 100%;
+  background-color: rgb(163, 163, 163);
+  width: 17%;
+  overflow: hidden;
+}
+.profile img {
+  object-fit: cover;
+}
 /*******************************aside media**************************************/
 @media all and (min-width: 639px) {
   aside {
@@ -61,7 +97,7 @@ aside p {
   .logo-small {
     display: none;
   }
-
+  .playlist,
   .logo {
     display: block;
   }
@@ -71,6 +107,7 @@ aside p {
     gap: 7px;
     margin-bottom: 10px;
   }
+  .fa-plus,
   aside p {
     display: block;
   }
@@ -81,6 +118,9 @@ aside p {
   .aside-nav-bottom,
   .aside-nav-top {
     width: 100%;
+  }
+  .download-box {
+    border-bottom: 1px solid rgba(163, 163, 163, 1);
   }
 }
 /*********************************header*****************************************/
