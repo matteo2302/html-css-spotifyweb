@@ -19,6 +19,7 @@ img {
 }
 h4 {
   margin-bottom: 10px;
+  font-size: 12px;
 }
 li {
   list-style: none;
@@ -89,6 +90,10 @@ aside p {
 .profile img {
   object-fit: cover;
 }
+.profile {
+  width: 100%;
+  background-color: transparent;
+}
 /*******************************aside media**************************************/
 @media all and (min-width: 639px) {
   aside {
@@ -122,6 +127,12 @@ aside p {
   .download-box {
     border-bottom: 1px solid rgba(163, 163, 163, 1);
   }
+  .profile {
+    border-radius: 100%;
+    background-color: rgb(163, 163, 163);
+    width: 17%;
+    overflow: hidden;
+  }
 }
 /*********************************header*****************************************/
 header {
@@ -148,4 +159,63 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: rgb(40, 40, 40);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.setting {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  gap: 5px;
+}
+.setting i {
+  color: white;
+  font-size: 12px;
+}
+.audio {
+  height: 5px;
+  background-color: rgb(163, 163, 163);
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.audio-set {
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+}
+.play {
+  width: 60%;
+  align-items: center;
+  flex-direction: column;
+}
+.play-buttons {
+  justify-content: space-between;
+  color: white;
+  font-size: 25px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.song-bar {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 20px;
+}
+.song-rn img {
+  height: 40px;
+}
+.song-rn p {
+  font-size: 10px;
+  color: rgb(163, 163, 163);
+}
+.song-rn h4 {
+  margin: 0;
+}
+.song-rn {
+  align-items: center;
+  height: 40px;
 }
