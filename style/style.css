@@ -100,10 +100,12 @@ aside p {
 .profile {
   border-radius: 100%;
   background-color: rgb(163, 163, 163);
-  width: 17%;
+  width: 37px;
+  height: 37px;
   overflow: hidden;
 }
 .profile img {
+  width: 100%;
   object-fit: cover;
 }
 .profile {
@@ -230,7 +232,15 @@ main {
 .for-u {
   width: 200px;
 }
-
+/**********************************most popular artist******************************/
+.artist {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 160px;
+}
+.artist img {
+  object-fit: cover;
+}
 /*********************************footer*****************************************/
 footer {
   width: 100%;
