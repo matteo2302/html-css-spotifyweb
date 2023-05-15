@@ -23,9 +23,12 @@
   <body>
     <div class="flex">
       <aside>
+        <!-- logos -->
         <img src="img/logo.svg" alt="logo" class="logo" />
         <img src="img/logo-small.svg" alt="logo" class="logo-small" />
+        <!-- aside -->
         <div class="aside-nav flex col">
+          <!-- aside-top -->
           <div class="aside-nav-top">
             <div class="img-aside">
               <img src="img/home.svg" alt="home" class="opacity-05" />
@@ -39,6 +42,7 @@
               <img src="img/libreria.svg" alt="search" class="opacity-05" />
               <p>La tua libreria</p>
             </div>
+            <!-- playlist -->
             <div class="playlist">
               <h4>PLAYLIST</h4>
               <div class="img-aside">
@@ -56,6 +60,7 @@
               </ul>
             </div>
           </div>
+          <!-- aside bottom -->
           <div class="aside-nav-bottom">
             <div class="img-aside download-box">
               <img
@@ -75,18 +80,28 @@
         </div>
       </aside>
       <main>
+        <!-- header -->
         <header></header>
       </main>
     </div>
+    <!--foooter  -->
     <footer class="flex">
+      <!-- song rn -->
       <div class="song-rn flex">
         <img src="img/sinister.jpeg" alt="sinister" />
         <div>
           <h4>Sinister</h4>
-          <p>Brano</p>
-          <p>Nome</p>
+          <div class="author-des">
+            <p>Brano</p>
+            <p>Nome</p>
+          </div>
+        </div>
+        <div class="song-rn-options">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
         </div>
       </div>
+      <!-- player -->
       <div class="play flex">
         <div class="flex play-buttons">
           <i class="fa-solid fa-shuffle"></i
@@ -95,8 +110,13 @@
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-rotate-right"></i>
         </div>
-        <div class="song-bar"></div>
+        <div class="flex song-bar-box">
+          <p>0:25</p>
+          <div class="song-bar"></div>
+          <p>4:35</p>
+        </div>
       </div>
+      <!-- setting audio -->
       <div class="setting">
         <i class="fa-solid fa-list"></i>
         <i class="fa-solid fa-tv"></i>
