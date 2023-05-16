@@ -31,7 +31,7 @@ h2 {
   padding: 30px 0;
 }
 h3 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px;
   color: white;
 }
@@ -86,8 +86,8 @@ aside p {
 .playlist {
   display: none;
 }
-.hover {
-  margin-right: 2px solid green;
+.img-aside:hover p {
+  opacity: 1;
 }
 /******************************aside-bottom************************************/
 .download {
@@ -129,6 +129,7 @@ aside p {
     align-items: center;
     gap: 7px;
     margin-bottom: 10px;
+    opacity: 0.5;
   }
   .fa-plus,
   aside p {
@@ -225,8 +226,39 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
+.song-plate p {
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+}
 .songs-box {
   flex-wrap: wrap;
+}
+.song-img {
+  position: relative;
+  cursor: pointer;
+}
+.play-hover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.play-hover i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 40px;
+  opacity: 0;
+}
+.play-hover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.play-hover:hover i {
+  opacity: 1;
 }
 /**********************************Created for********************************/
 .for-u {
