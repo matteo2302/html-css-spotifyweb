@@ -30,7 +30,7 @@
         <div class="aside-nav flex col">
           <!-- aside-top -->
           <div class="aside-nav-top">
-            <div class="img-aside">
+            <div class="img-aside border-left">
               <img src="img/home.svg" alt="home" class="opacity-05" />
               <p>Home</p>
             </div>
@@ -199,10 +199,11 @@
         <img src="img/sinister.jpeg" alt="sinister" />
         <div>
           <h4>Sinister</h4>
-          <div class="author-des">
-            <p>Brano</p>
-            <p>Nome</p>
-          </div>
+
+          <a class="author-des" href="#"
+            ><p>Brano</p>
+            <p>Nome</p></a
+          >
         </div>
         <div class="song-rn-options">
           <i class="fa-regular fa-heart"></i>
@@ -212,15 +213,18 @@
       <!-- player -->
       <div class="play flex">
         <div class="flex play-buttons">
-          <i class="fa-solid fa-shuffle"></i
-          ><i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
           <i class="fa-regular fa-circle-play"></i>
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-rotate-right"></i>
         </div>
         <div class="flex song-bar-box">
           <p>0:25</p>
-          <div class="song-bar"></div>
+          <div class="song-bar">
+            <div class="song-point"></div>
+            <div class="song-point-green"><div class="point"></div></div>
+          </div>
           <p>4:35</p>
         </div>
       </div>
@@ -230,7 +234,9 @@
         <i class="fa-solid fa-tv"></i>
         <i class="fa-solid fa-volume-high"></i>
         <div class="audio">
-          <div class="audio-set"></div>
+          <div class="audio-set">
+            <div class="audio-point-green"><div class="point"></div></div>
+          </div>
         </div>
       </div>
     </footer>
